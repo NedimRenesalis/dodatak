@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>decentralizirana online pijaca kao ebay ili pik olx</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Objavi proizvod</h1>
+        <div class="container">
+            <div class="row">
+                <div style="display: none;" class="alert alert-success" id="msg"></div>
+                <form class="form-horizontal col-sm-5" id="add-item-to-store">
+                    <div class="form-group">
+                        <label for="product-name" class="col-sm-2 control-label">Ime</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="product-name" class="form-control" id="product-name" placeholder="iPhone, Jeans, cipele" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-description" class="col-sm-2 control-label">Opis</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="product-description" rows="8" id="product-description" placeholder="Enter detailed product description" required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image" class="col-sm-2 control-label">Upload sliku proizvoda</label>
+                        <div class="col-sm-10">
+                            <input type="file" name="product-image" class="form-control" id="product-image" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-category" class="col-sm-2 control-label">Kategorija</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="product-category" id="product-category">
+                            <option>Umjetnost</option>
+                            <option>Knjige</option>
+                            <option>Kamere</option>
+                            <option>Mobilni telefoni</option>
+                            <option>Odjeca</option>
+                            <option>Papirni novac</option>
+                            <option>Antikviteti</option>
+                            <option>Racunarska oprema</option>
+                            <option>Bijela tehnika</option>
+                            <option>Kucna radinost</option>
+                            <option>Filmovi</option>
+                            <option>Showbiz uspomene</option>
+                            <option>Poklon bonovi</option>
+                            <option>Muzika</option>
+                            <option>Muzicki instrumenti</option>
+                            <option>Za kucne ljubimce</option>
+                            <option>Grncarija i staklo</option>
+                            <option>Sportska oprema</option>
+                            <option>Postane markice</option>
+                            <option>Karte</option>
+                            <option>Igrace i hobi</option>
+                            <option>Video igrice</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price" class="col-sm-2 control-label">Startna cijena</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="product-price" id="product-price" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-condition" class="col-sm-2 control-label">U kojem je stanju</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="product-condition" id="product-condition">
+                            <option value="1">Novo </option>
+                            <option value="2">Koristeno</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price" class="col-sm-2 control-label">Aukcija pocinje</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" name="product-auction-start" id="product-auction-start" required="required"></input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price" class="col-sm-2 control-label">Koliko dana traje</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="product-auction-end" id="product-auction-end">
+                            <option>1</option>
+                            <option>3</option>
+                            <option>5</option>
+                            <option>7</option>
+                            <option>10</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Dodaj proizvod </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html
